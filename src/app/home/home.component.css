@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin: 20px;
+}
+button {
+  background-color: rgb(226, 89, 89);
+  padding: 10px;
+  border-radius: 5px;
+}

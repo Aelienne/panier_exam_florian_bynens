@@ -1,0 +1,16 @@
+<app-product-list></app-product-list>
+<div>
+  <h2>Panier :</h2>
+  <ul>
+    <li *ngFor="let produit of service.fetchAllPanier()">
+      <p>Nom : {{ produit.nom }}</p>
+      <p>Quantité : {{ produit.quantite }}</p>
+      <p>Total : {{ produit.quantite * produit.prixHT }} €</p>
+      <button (click)="service.supprimerAuPanier(produit)">Supprimer</button>
+    </li>
+    <li>
+      <p>Panier Total : {{ service.totalDuPanier() }} €</p>
+      <p>Panier Total TTC : {{ service.totalDuPanier() | totalTTC }} €</p>
+    </li>
+  </ul>
+</div>

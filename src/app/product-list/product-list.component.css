@@ -1,0 +1,23 @@
+img {
+  width: 80px;
+  height: 80px;
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  text-align: center;
+}
+li {
+  margin-top: 50px;
+  border: solid 2px;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 50px 0px;
+}
+button {
+  background-color: rgb(103, 103, 219);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let produit of produits">
+    <p>{{ produit.nom }}</p>
+    <img src="{{ produit.image }}" alt="" />
+    <p>{{ produit.prixHT }} €</p>
+    <button (click)="service.ajouterAuPanier(produit)">Ajouter</button>
+  </li>
+</ul>
